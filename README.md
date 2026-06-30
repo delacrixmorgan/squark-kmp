@@ -1,35 +1,49 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Squark
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+![Overview Header](screenshots/0_header.png?raw=true "Overview Header")
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Overview
 
-### Build and Run Android Application
+Travel the world with the ultimate zero clutter currency converter app.
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
+## Description
 
-### Build and Run iOS Application
+Squark is a currency converter app that lets you interactively convert your money. It’s super fun
+and easy with just a few swipes and BOOM you are where you wanted to be!
 
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+__a) Interactive Rate Table__ 💰
 
----
+Essentially, it removes the keypad and replaced it with a giant incremental number set table. Just a
+SWIPE to get to the nearest tens, hundreds and thousands of your designated currency.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+__b) Offline Support__ 📡
+
+Internet connectivity can be a problem when you are on a trip. Not to worry, we got you COVERED
+mate!
+
+__c) 170 Currencies Worldwide__ 🌍
+
+From your everyday United Status Dollars to crypto realm of Bitcoins. Mr. Worldwide, yo!
+
+Designed to bring Google Material Design to every aspects of the app. PERFECT companion app on your
+adventurous travels without hassling about money conversion ever again!
+
+More to come. In the meantime, go bananas!
+
+[Google Play Store - Squark Zero Cluttered Currency Converter](https://play.google.com/store/apps/details?id=com.delacrixmorgan.squark)
+
+## Screenshots
+
+| ![Interface](screenshots/1_interface.gif?raw=true "Interface") | ![Toggle](screenshots/2_toggle.gif?raw=true "Toggle") |
+|----------------------------------------------------------------|-------------------------------------------------------|
+
+![Overview](screenshots/3_overview.png?raw=true "Overview")
+
+## License
+
+```
+Squark © by Delacrix Morgan
+Licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+```
+
+[Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
